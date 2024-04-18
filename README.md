@@ -1,6 +1,6 @@
 # Background
 
-Around December 2022 I stumbled across natural vision improvement, in particular [EndMyopia](endmyopia.org), although these days I mostly engage with its open-source fork [Reduced Lens](reducedlens.org).
+Around December 2022 I stumbled across natural vision improvement, in particular [EndMyopia](https://endmyopia.org), although these days I mostly engage with its open-source fork [Reduced Lens](https://reducedlens.org).
 
 My background is in physics, software, and data science, and I'm particularly interested in getting to the bottom of vision improvement. 
 On the one hand, there have been enough cases of significant optometrist improvements that I suspect vision improvement works, even in adults.
