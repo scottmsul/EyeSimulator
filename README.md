@@ -33,10 +33,12 @@ The Snellen Chart below shows simulated blur resulting from different refractive
 After looking through several different textbooks, I found [Introduction to Fourier Optics](https://docs.google.com/file/d/0B78A_rsP6RDSS3VRWk12Y2FUcVk/edit?pli=1&resourcekey=0-EdJQY3UFbqEiJnqV8YDPNA) by Goodman to be a very readable introduction. 
 I'd say it's on par with a typical first-year graduate physics course.
 
-The notebook [Diffraction_1_Goodman_Ch3_Rayleigh_Sommerfeld](Diffraction_1_Goodman_Ch3_Rayleigh_Sommerfeld.ipynb) follows chapter 3 of Goodman, and derives the [Rayleigh Sommerfeld Diffraction Formula](https://en.wikipedia.org/wiki/Helmholtz_equation#Three-dimensional_solutions_given_the_function_on_a_2-dimensional_plane):
+The notebook [Diffraction_1_Simple_2D_Interference](./Diffraction_1_Simple_2D_Interference.ipynb) is a refresher of 2D interference patterns from undergraduate-level physics, and is not in Goodman.
+
+The notebook [Diffraction_2_Goodman_Ch3_Rayleigh_Sommerfeld](Diffraction_2_Goodman_Ch3_Rayleigh_Sommerfeld.ipynb) follows chapter 3 of Goodman, and derives the [Rayleigh Sommerfeld Diffraction Formula](https://en.wikipedia.org/wiki/Helmholtz_equation#Three-dimensional_solutions_given_the_function_on_a_2-dimensional_plane):
 $$\psi(x,y,z) = - \frac{1}{2 \pi} \iint_{-\infty}^{\infty} \psi(x', y') \frac{e^{ikd}}{d} \frac{z}{d} \left( ik-\frac{1}{d} \right) dx' dy'$$
 
-The notebook [Diffraction_2_Goodman_Ch4_Fresnel_Fraunhofer](./Diffraction_2_Goodman_Ch4_Fresnel_Fraunhofer.ipynb) derives the [Fresnel Diffraction Formula](https://en.wikipedia.org/wiki/Fresnel_diffraction):
+The notebook [Diffraction_3_Goodman_Ch4_Fresnel_Fraunhofer](./Diffraction_3_Goodman_Ch4_Fresnel_Fraunhofer.ipynb) derives the [Fresnel Diffraction Formula](https://en.wikipedia.org/wiki/Fresnel_diffraction):
 
 $$\psi(x,y,z) = - \frac{ik}{2\pi} \frac{e^{ikz}}{z} \exp{ \left[ \frac{ik}{2}(x^2+y^2) \right] } \iint_{-\infty}^{\infty} \psi(x',y') \exp{ \left[ \frac{ik}{2z}(x'^2 + y'^2) \right] }  \exp{ \left[ \frac{-ik}{z}(xx'+yy') \right] }dx' dy'$$
 
@@ -44,6 +46,6 @@ This notebook then uses the Fraunhofer Approximation to calculate some examples 
 
 ![Fraunhofer Examples](./images/fraunhofer_examples.png)
 
-The notebook [Diffraction_3_Goodman_Ch5_Lenses](./Diffraction_3_Goodman_Ch5_Lenses.ipynb) solves the equations involving lenses, including the derivation of the image equation:
+The notebook [Diffraction_4_Goodman_Ch5_Lenses](./Diffraction_4_Goodman_Ch5_Lenses.ipynb) solves the equations involving lenses, including the derivation of the image equation:
 
 $$\psi_i(x_o,y_o,x_i,y_i) = \frac{\psi_0}{\lambda^2 z_o z_i} \iint_{-\infty}^{\infty} P(x_l', y_l') \exp{ \left\{ -\frac{ik}{z_i} \left[ \left( x_i - M x_o \right) x_l' + \left(y_i - M y_o \right)y_l' \right] \right\} }dx_l' dy_l'$$
